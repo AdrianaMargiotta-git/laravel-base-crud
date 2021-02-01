@@ -4,12 +4,12 @@
 
   <a href="{{route('home-peripherals')}}">Back</a>
 
-  <h2>Nome periferica: {{$peripheral -> name}}</h2>
+  <h1>Peripherals name: {{$peripheral -> name}}</h1>
 
-  <h2>Codice modello: {{$peripheral -> model}}</h2>
+  <h3>Model code: {{$peripheral -> model}}</h3>
 
-  <h2>Prezzo: {{$peripheral -> price}}</h2>
+  <h3>Price: {{$peripheral -> price}}$</h3>
 
-  <h2>Consumo: {{$peripheral -> consumption}} W</h2>
+  <h3>Consumption: {{$peripheral -> consumption}} W</h3>
 
 @endsection

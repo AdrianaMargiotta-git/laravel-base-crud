@@ -12,9 +12,7 @@
 
     <div class="container">
         @include('components.header')
-        {{-- @yield('home')
-        @yield('blog')
-        @yield('about') --}}
+        @yield('section')
         @include('components.footer')
     </div>
 </body>

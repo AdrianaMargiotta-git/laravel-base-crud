@@ -6,21 +6,21 @@
 
   <h1>Insert a new peripheral:</h1>
 
-  <form action="{{route('home-peripherals')}}" method="post">
+  <form action="{{route('store-peripherals')}}" method="post">
 
     @csrf
     @method('POST')
 
-    <label for="name">Inserisci il nome</label>
+    <label for="name">Insert a name:</label>
     <input type="text" name="name" value="">
     <br>
-    <label for="model">Inserisci il codice del modello</label>
+    <label for="model">Insert the model:</label>
     <input type="text" name="model" value="">
     <br>
-    <label for="price">Inserisci il prezzo</label>
+    <label for="price">Insert the price:</label>
     <input type="text" name="price" value="">
     <br>
-    <label for="consumption">Inserisci il consumo in Watt</label>
+    <label for="consumption">Insert the consumption:</label>
     <input type="text" name="consumption" value="">
     <br>
     <input type="submit" name="" value="Salva">

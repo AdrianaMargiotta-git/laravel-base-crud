@@ -20,4 +20,4 @@ Route::get('/show/{id}', 'MainController@show') -> name('peripherals-show');
 
 Route::get('/create', 'MainController@create') -> name('peripherals-create');
 
-Route::post('/store', 'MainController@store') -> name('home-peripherals');
+Route::post('/store', 'MainController@store') -> name('store-peripherals');
