@@ -11,5 +11,5 @@ class Peripheral extends Model
         'model',
         'price',
         'consumption',
-      ];
+    ];
 }

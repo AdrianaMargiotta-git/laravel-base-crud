@@ -12,6 +12,6 @@ class PeripheralSeeder extends Seeder
      */
     public function run()
     {
-        factory(Peripheral::class, 100) -> create();
+        factory(Peripheral::class, 50) -> create();
     }
 }
