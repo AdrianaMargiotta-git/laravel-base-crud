@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DeviceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MainController@index') -> name('home-peripherals');
+
+Route::get('/show/{id}', 'MainController@show') -> name('peripherals-show');
+
+Route::get('/create', 'MainController@create') -> name('peripherals-create');
+
+Route::post('/store', 'MainController@store') -> name('home-peripherals');
