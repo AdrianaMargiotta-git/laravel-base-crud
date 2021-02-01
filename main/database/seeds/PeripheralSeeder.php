@@ -1,5 +1,6 @@
 <?php
 
+use App\Peripheral;
 use Illuminate\Database\Seeder;
 
 class PeripheralSeeder extends Seeder
@@ -11,6 +12,6 @@ class PeripheralSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Peripheral::class, 100) -> create();
     }
 }
